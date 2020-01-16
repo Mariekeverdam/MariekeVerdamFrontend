@@ -195,12 +195,12 @@ main section {
     transform: rotate(10deg);
 }
 
-.container3 {
+article:nth-of-type(7) {
     position: relative;
     transition: 1s;
 }
 
-.container3:hover {
+article:nth-of-type(7):hover {
     transform: rotate(10deg);
 }
 
@@ -336,23 +336,27 @@ Footer {
     background-color: black;
     padding-bottom: 2em;
 }
+.social {
+    margin-top: 130%;
+}
 
-@media(max-width:55em) {
+.social2 {
+    margin-top: 20%;
+}
+@media(min-width:40em) {
    
     .social {
         margin-top: 130%;
     }
 }
 
-
 .icoon {
     width: 5em;
     margin-top: 3em;
     transition: 1s
 }
-
 .icoon:hover {
-    transform: translateY(-2em) rotate(10deg);
+    transform: translateY(-2em) rotate(20deg);
 }
 
 .social , .social2{
@@ -361,19 +365,18 @@ Footer {
     justify-content: center;
 }
 
-@media (min-width: 45em) {
+@media (min-width: 55em) {
     .social , .social2{
         grid-template-columns: 10em 10em 10em;
         margin-left: 10%;
+        margin-top: 40%;
     }
 
     .icoon {
         width: 6em;
         margin-bottom: 5em;
-        margin-top: 5em;
+        margin-top: 7em;
     }
-    
-   
 }
 
 @media (min-width: 60em) {
@@ -384,10 +387,13 @@ Footer {
     .social , .social2{
         grid-template-columns: 12em 12em 12em;
         margin-left: 0%;
+        margin-top: 40%;
     }
   
 }
 
-.social2 {
-    margin-top: 20%;
+@media (min-width:65em) {
+    .social , .social2 {
+        margin-top: 20%;
+    }
 }
